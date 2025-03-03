@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  bank_statement: one
+  category: one
+  amount: 9.99
+  currency: MyString
+  date: 2025-03-02 16:22:32
+  description: MyString
+  raw_string: MyText
+
+two:
+  bank_statement: two
+  category: two
+  amount: 9.99
+  currency: MyString
+  date: 2025-03-02 16:22:32
+  description: MyString
+  raw_string: MyText

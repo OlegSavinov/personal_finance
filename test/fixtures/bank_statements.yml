@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: one
+  file_data: MyString
+  parsed: false
+  uploaded_at: 2025-03-02 16:08:03
+
+two:
+  user: two
+  file_data: MyString
+  parsed: false
+  uploaded_at: 2025-03-02 16:08:03

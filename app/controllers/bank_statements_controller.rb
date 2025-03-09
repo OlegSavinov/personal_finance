@@ -9,8 +9,7 @@ class BankStatementsController < ApplicationController
 
     if @bank_statement.save
       # Pass the uploaded file to BankStatementParser for parsing
-      parser = BankStatementParser.call(@bank_statement.file)
-      parser.parse
+      data = BankStatementParser.parse(@bank_statement.file)
 
       redirect_to bank_statement_path(@bank_statement), notice: "Bank statement processed successfully."
     else

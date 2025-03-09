@@ -6,9 +6,9 @@ class BankStatementParser
     bank_parser = determine_bank_parser file
     bank_parser = bank_parser.new(file)
 
-    bank_parser.get_basic_info
-    bank_parser.get_transactions
-    result
+    bank_parser.parse_basic_info
+    bank_parser.parse_transactions
+    bank_parser.data
   end
 
 
@@ -20,11 +20,11 @@ class BankStatementParser
     File.extname(@file.blob.filename.to_s)
   end
 
-  def get_basic_info
+  def parse_basic_info
     raise NotImplementedError
   end
 
-  def get_transactions
+  def parse_transactions
     raise NotImplementedError
   end
 end
